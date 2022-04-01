@@ -7,11 +7,20 @@ header{
   padding: 0;
   border: 0;
 }
+
+footer{
+  background-color: rgb(51,0,111);
+  margin: 0;
+  padding: 3rem;
+  border: 0;
+}
+
 .white-text{
   color: white;
 }
 /* Horizontal Navigation Bar */
 .nav-list {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -24,7 +33,6 @@ header{
   text-align: center;
   padding: 0px 20px;
   text-decoration-color: white;
-  float: left
 }
 .nav-list-link{
   display: block;
@@ -44,16 +52,39 @@ header{
 h1{
   color: rgb(232,211,162);
   font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }
 h2{
-  color: rgb(51,0,111)
+  color: rgb(51,0,111);
+  font-family: 'Roboto', sans-serif;
 }
 img{
   border-style: solid;
   border-color: rgb(232,211,162);
   border-width: 2px;
   width: 200px;
+  float: left;
 }
 a:hover{
   background-color: rgb(232,211,162)
+}
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+  text-align: justify;
+}
+
+article{
+  padding-top: 3rem;
+}
+
+.cert-cell{
+  max-width: 50%;
+  margin: 2rem;
+  width: fit-content;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-around;
 }
