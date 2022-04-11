@@ -1,0 +1,39 @@
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem 0 1rem 0;
+}
+
+form {
+  display: block;
+  margin:1rem 10% 1rem 10%;
+}
+
+input {
+  border-radius: 4px;
+}
+
+input:focus {
+  background-color: rgb(232,211,162);
+}
+
+textarea:focus {
+  background-color: rgb(232,211,162);
+}
+
+input[type=tel] {
+  margin-bottom: 0;
+}
+
+small{
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input[type=submit] {
+  color: rgb(232,211,162);
+  background-color: rgb(51,0,111);
+  padding: 1rem;
+}

@@ -2,38 +2,45 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>About Me</title>
+    <title>Contact Me</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5c8b163bed.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
   </head>
   <body>
     <header>
-      <h1>About Me</h1>
+      <h1>Contact Me</h1>
       <nav>
         <ul class="nav-list">
           <li class="nav-list-item"><a class="nav-list-link" href="index.html"><i class="fa-solid fa-certificate"></i> Certificates</a></li>
-          <li class="nav-list-item"><a class="nav-list-link active" href="about-me.html"><i class="fa-regular fa-address-card"></i> About Me</a></li>
+          <li class="nav-list-item"><a class="nav-list-link" href="about-me.html"><i class="fa-regular fa-address-card"></i> About Me</a></li>
         </ul>
       </nav>
     </header>
-    <div>
-      <article>
-        <p></p>
-        <img src="images/profile_photo.jpg" width=300 alt="Mark Taylor Profile">
-        <h2>Where I work...</h2>
-        <p>
-        I am a structural engineer at Boeing that specializes in Finite Element Modeling.
-        Over the last several years I have been working on developing an advanced simulation
-        toolset with a python and web framework.
-        </p>
-        <p>Checkout my <a href="https://www.linkedin.com/in/mark-taylor-engineer">LinkedIn profile.</a></p>
-        <p>Checkout out my <a href="index.html">Certificate Programs</a></p>
-        <p><a href="contact.html"> Contact Me</a></p>
-      </article>
-    </div>
+
+    <form method="GET">
+      <label>Name:
+        <input type="text" name="name" value="">
+      </label>
+
+      <label>Email:
+        <input type="email" name="email" value="">
+      </label>
+
+      <label>Phone Number:
+        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><small>Format: 123-456-7890</small>
+      </label>
+
+      <label>Message:
+        <textarea name="message" rows="8" cols="80"></textarea>
+      </label>
+
+      <input type="submit" name="" value="Submit">
+    </form>
+
     <footer class=white-text>
       <p>This page written by: Mark Taylor, <a href="mailto:taylormarkld@gmail.com">taylormarkld@gmail.com</a></p>
     </footer>
